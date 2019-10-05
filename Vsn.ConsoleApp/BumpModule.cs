@@ -36,8 +36,6 @@ namespace Bump
             var project = GetSingleProject();
             project.SetVersion(version);
             project.Save();
-            var name = project.GetName();
-            Console.WriteLine($"Project: {name}");
             var v = project.GetVersion();
             Console.WriteLine($"Version set to: {v}");
         }
