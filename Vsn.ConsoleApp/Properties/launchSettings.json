@@ -2,8 +2,8 @@
   "profiles": {
     "Vsn": {
       "commandName": "Project",
-      "commandLineArgs": "bump minor",
-      "workingDirectory": "D:\\code\\projects\\bump\\Bump.ConsoleApp"
+      "commandLineArgs": "bump pre",
+      "workingDirectory": "D:\\code\\projects\\vsn\\vsn.ConsoleApp"
     }
   }
 }

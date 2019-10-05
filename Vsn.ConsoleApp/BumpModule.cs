@@ -55,6 +55,30 @@ namespace Bump
             Console.WriteLine($"Version bumped to: {version}");
         }
 
+        [Command]
+        public void Release()
+        {
+            var project = GetSingleProject();
+            project.ClearPrerelease();
+            project.Save();
+            var version = project.GetVersion();
+            Console.WriteLine($"Version set to: {version}");
+            // wip.
+            // removes pre-release details
+        }
+
+        [Command]
+        public void Pre(string value)
+        {
+            var project = GetSingleProject();
+            project.SetPrerelease(value);
+            project.Save();
+            var version = project.GetVersion();
+            Console.WriteLine($"Version set to: {version}");
+            // wip.
+            // removes pre-release details
+        }
+
         [Command, Help("Lists all (.csproj file) projects")]
         public void Projects()
         {

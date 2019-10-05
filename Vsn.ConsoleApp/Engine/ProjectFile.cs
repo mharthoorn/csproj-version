@@ -55,7 +55,7 @@ namespace Bump
             var value = node.Value;
             if (value is string)
             {
-                Version version = new Version(value);
+                Version version = new Version(value, loose: true);
                 var bumped = version.Bump(component);
                 node.SetValue(bumped.ToString());
             }
@@ -63,9 +63,33 @@ namespace Bump
             {
                 node.SetValue("0.0.1");
             }
-            
-            
-            
+
+        }
+
+        public void ClearPrerelease()
+        {
+            var node = document.GetVersionNode();
+            var value = node.Value;
+            if (value is string)
+            {
+                var v = new Version(value, loose: true);
+                var version = v.ClearPrerelease();
+                node.SetValue(version.ToString());
+            }
+            else node.SetValue("0.0.1");
+        }
+
+        public void SetPrerelease(string pre)
+        {
+            var node = document.GetVersionNode();
+            var value = node.Value;
+            if (value is string)
+            {
+                var v = new Version(value, loose: true);
+                var version = v.SetPrerelease(pre);
+                node.SetValue(version.ToString());
+            }
+            else node.SetValue("0.0.1");
         }
     }
 }
