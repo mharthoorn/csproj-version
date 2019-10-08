@@ -1,5 +1,5 @@
 # Vsn
-Vsn is a lightweight command line tool to manage a csproj file version.
+Vsn is a lightweight command line tool to manage the file version in a .csproj file.
 
 ## Background
 .NET core projects now work with a central version property in the .csproj file to control the version number of the app.

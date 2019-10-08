@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <ToolCommandName>csproj</ToolCommandName>
+    <ToolCommandName>vsn</ToolCommandName>
     <PackAsTool>true</PackAsTool>
     <Version>0.4.0</Version>
   </PropertyGroup>
