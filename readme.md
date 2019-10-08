@@ -2,7 +2,7 @@
 Vsn is a lightweight command line tool to manage a csproj file version.
 
 ## Background
-.NET core project now work with one central version node in the .csproj file to control the version number of the app.
+.NET core projects now work with a central version property in the .csproj file to control the version number of the app.
 This version also goes into the final Assembly or executable.
 
 ## Setting the version
@@ -52,8 +52,6 @@ You can even use it as a reference in a longer command:
 	git tag $(vsn)
 ```
 
-
-
-
 ## Limitations
-Vsn currently only works if there is just one .csproj file in the current directory.
+- Vsn currently only works if there is just one .csproj file in the current directory. 
+- Vsn does not yet work with VersionPrefix or VersionSuffix
