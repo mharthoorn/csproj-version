@@ -40,7 +40,7 @@ namespace Bump
             Console.WriteLine($"Version set to: {v}");
         }
 
-        [Command, Help("major, minor, or patch")]
+        [Command, Help("major, minor, patch, or pre")]
         public void Bump(string part)
         {
             if (!Enum.TryParse<VersionComponent>(part, ignoreCase: true, out var component))
