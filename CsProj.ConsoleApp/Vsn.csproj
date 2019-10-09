@@ -7,9 +7,9 @@
     <PackAsTool>true</PackAsTool>
     <Version>0.4.0</Version>
   </PropertyGroup>
-  
+   
   <ItemGroup>
-    <PackageReference Include="Shell.Routing" Version="2.0.0-beta6" />
+    <PackageReference Include="Shell.Routing" Version="2.0.0" />
     <PackageReference Include="SemanticVersioning" Version="1.2.0" />
   </ItemGroup>
   
